@@ -43,8 +43,10 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-
 # Redis
 gem 'redis' 
 gem 'redis-namespace' 
 gem 'redis-rails'
+
+# 非同期処理
+gem 'sidekiq'

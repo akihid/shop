@@ -26,6 +26,11 @@ services:
     tty: false 
     stdin_open: false
 
+  worker:
+    <<: *web
+    command: "bundle exec sidekiq -C config/sidekiq.yml"
+    ports: []
+
   redis:
     image: redis:5.0.5-alpine 
     ports:
