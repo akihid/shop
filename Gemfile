@@ -64,3 +64,7 @@ gem 'redis-rails'
 
 # 非同期処理
 gem 'sidekiq'
+
+# Semantic Uiの利用
+gem 'jquery-rails'
+gem 'semantic-ui-sass'
