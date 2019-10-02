@@ -32,5 +32,11 @@ module Mybookshop
 
     # sidekiqを利用
     config.active_job.queue_adapter = :sidekiq
+
+    # タイムゾーンを日本時間に設定
+    config.time_zone = 'Tokyo'
+
+    # デフォルトの言語を日本語に設定
+    config.i18n.default_locale = :ja
   end
 end
