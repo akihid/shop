@@ -31,9 +31,9 @@ Rails.application.configure do
 
   # Redis Cache
   config.cache_store = :redis_store, {
-    host: 'redis',
-    port: 6379,
-    namespace: 'cache'
+    host: ENV['REDIS_HOST'],
+    port: ENV['REDIS_PORT'],
+    namespace: ENV.fetch('REDIS_CACHE_NAMESPACE', 'cache')
   }, {
     expires_in: 1.week
   }

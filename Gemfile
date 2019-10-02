@@ -68,3 +68,6 @@ gem 'sidekiq'
 # Semantic Uiの利用
 gem 'jquery-rails'
 gem 'semantic-ui-sass'
+
+# 環境変数管理
+gem 'dotenv-rails'
