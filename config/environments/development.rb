@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -29,9 +31,9 @@ Rails.application.configure do
 
   # Redis Cache
   config.cache_store = :redis_store, {
-    host: "redis",
+    host: 'redis',
     port: 6379,
-    namespace: "cache"
+    namespace: 'cache'
   }, {
     expires_in: 1.week
   }

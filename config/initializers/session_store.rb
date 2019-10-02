@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # セッションのストレージにRedisを利用
 Rails.application.config.session_store(
   :redis_store,

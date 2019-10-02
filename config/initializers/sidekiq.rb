@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Sidekiqの設定
 Sidekiq.configure_server do |config|
   config.redis = {
