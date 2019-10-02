@@ -36,6 +36,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'factory_bot_rails'
+  # N+1クエリの検知
+  gem 'bullet'
 end
 
 group :development do
