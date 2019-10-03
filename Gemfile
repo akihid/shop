@@ -73,3 +73,6 @@ gem 'semantic-ui-sass'
 
 # 環境変数管理
 gem 'dotenv-rails'
+
+# シード管理
+gem 'seed-fu'
