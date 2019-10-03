@@ -1,0 +1,33 @@
+<div class="ui container mt40">
+  <div class="ui grid">
+    <div class="four wide column">
+      <%# TODO: 検索フォームを実装 %>
+    </div>
+    <div class="twelve wide column">
+      <div class="ui four cards">
+        <% @items.each do |item| %>
+        <%# TODO: 商品詳細画面のリンクを実装 %>
+        <%= link_to '#', class: 'ui card' do %>
+        <div class="image">
+          <%= image_tag item.item_image.file, alt: item.title %>
+        </div>
+        <div class="content">
+          <div class="description">
+            <%= item.title %>
+          </div>
+          <div class="meta">
+            <%= number_to_currency(item.price) %>
+            </div>
+          </div>
+          <div class="extra content">
+            <div class="floated author">
+              <i class="ui icon book"></i>
+              <%= item.item_authors.first&.name %>
+            </div>
+          </div>
+        <% end %>  
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
